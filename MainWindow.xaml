@@ -1,0 +1,99 @@
+<Window x:Class="KosciDesktop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Gra w kosci"
+        Height="480"
+        Width="760"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize"
+        Background="#ED27C121">
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    Margin="10">
+            <Image x:Name="imgKosc0"
+                   Width="110"
+                   Height="110"
+                   Margin="10"
+                   Source="kosc0.png"
+                   Stretch="Uniform"
+                   Cursor="Hand"
+                   Tag="0"
+                   MouseLeftButtonDown="KlikKosc"/>
+            <Image x:Name="imgKosc1"
+                   Width="110"
+                   Height="110"
+                   Margin="10"
+                   Source="kosc0.png"
+                   Stretch="Uniform"
+                   Cursor="Hand"
+                   Tag="1"
+                   MouseLeftButtonDown="KlikKosc"/>
+            <Image x:Name="imgKosc2"
+                   Width="110"
+                   Height="110"
+                   Margin="10"
+                   Source="kosc0.png"
+                   Stretch="Uniform"
+                   Cursor="Hand"
+                   Tag="2"
+                   MouseLeftButtonDown="KlikKosc"/>
+            <Image x:Name="imgKosc3"
+                   Width="110"
+                   Height="110"
+                   Margin="10"
+                   Source="kosc0.png"
+                   Stretch="Uniform"
+                   Cursor="Hand"
+                   Tag="3"
+                   MouseLeftButtonDown="KlikKosc"/>
+            <Image x:Name="imgKosc4"
+                   Width="110"
+                   Height="110"
+                   Margin="10"
+                   Source="kosc0.png"
+                   Stretch="Uniform"
+                   Cursor="Hand"
+                   Tag="4"
+                   MouseLeftButtonDown="KlikKosc"/>
+        </StackPanel>
+
+        <Button Grid.Row="1"
+                x:Name="btnRzut"
+                Content="RZUT"
+                Width="180"
+                Height="60"
+                Margin="0,10,0,32"
+                HorizontalAlignment="Center"
+                Background="#ED275021"
+                Foreground="White"
+                FontSize="16"
+                FontWeight="Bold"
+                Click="KlikRzut" Grid.RowSpan="2"/>
+
+        <TextBlock Grid.Row="2"
+                   Text="Wynik rzutu"
+                   HorizontalAlignment="Center"
+                   Margin="0,25,0,69"
+                   FontSize="18"
+                   Foreground="Black" Grid.RowSpan="2"/>
+
+        <TextBlock Grid.Row="3"
+                   x:Name="txtWynik"
+                   Text="0"
+                   HorizontalAlignment="Center"
+                   Margin="0,37,0,-17"
+                   FontSize="40"
+                   FontWeight="Bold"
+                   Foreground="Black"/>
+    </Grid>
+</Window>

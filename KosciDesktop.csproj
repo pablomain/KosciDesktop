@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <Compile Remove="Program.cs" />
+    <Compile Remove="Kosc.cs" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <RootNamespace>KosciDesktop</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="kosc0.png" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="kosc1.png" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="kosc2.png" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="kosc3.png" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="kosc4.png" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="kosc5.png" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="kosc6.png" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>
